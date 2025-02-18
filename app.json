@@ -1,7 +1,13 @@
 {
-  "name": "ignitegym",
-  "slug": "ignitegym",
-  "plugins": [
-    "expo-font"
-  ]
+  "expo": {
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "ignitegym",
+    "slug": "ignitegym",
+    "plugins": [
+      "expo-font"
+    ],
+    "userInterfaceStyle": "automatic"
+  }
 }

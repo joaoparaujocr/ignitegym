@@ -11,7 +11,8 @@
       "@hooks/*": ["./src/hooks/*"],
       "@contexts/*": ["./src/context/*"],
       "@routes/*": ["./src/routes/*"],
-      "@/*": ["./*"] // Add relative path
+      "@/*": ["./*"],
+      "@/gluestack-ui/*": ["./src/components/ui/*"],
     }
   },
   "extends": "expo/tsconfig.base"

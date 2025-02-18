@@ -5,10 +5,13 @@ import gluestackPlugin from '@gluestack-ui/nativewind-utils/tailwind-plugin';
 module.exports = {
   darkMode: process.env.DARK_MODE ? process.env.DARK_MODE : 'media',
   content: [
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
     './src/**/*.{html,js,jsx,ts,tsx}',
     './src/core-components/**/**/*.{html,js,jsx,ts,tsx}',
     './src/components/**/*.{html,js,jsx,ts,tsx,mdx}',
     './src/hooks/**/*.{html,js,jsx,ts,tsx,mdx}',
+    './App.tsx',
   ],
   presets: [require('nativewind/preset')],
   safelist: [
@@ -203,4 +206,3 @@ module.exports = {
   plugins: [gluestackPlugin],
 };
 
- 
