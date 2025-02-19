@@ -177,10 +177,24 @@ module.exports = {
           info: 'rgb(var(--color-indicator-info)/<alpha-value>)',
           error: 'rgb(var(--color-indicator-error)/<alpha-value>)',
         },
+        green: {
+          500: '#00B37E',
+          600: '#16a34a',
+          700: '#00875F'
+        },
+        gray: {
+          100: '#E1E1E6',
+          200: '#C4C4CC',
+          300: '#7C7C8A',
+          400: '#323238',
+          500: '#29292E',
+          600: '#202024',
+          700: '#121214',
+        }
       },
       fontFamily: {
-        heading: undefined,
-        body: undefined,
+        heading: 'Roboto_700Bold',
+        body: 'Roboto_400Regular',
         mono: undefined,
         roboto: ['Roboto', 'sans-serif'],
       },
@@ -188,7 +202,20 @@ module.exports = {
         extrablack: '950',
       },
       fontSize: {
-        '2xs': '10px',
+        '2xs': 10,
+        xs: 12,
+        sm: 14,
+        md: 16,
+        lg: 18,
+        xl: 20,
+        '2xl': 24,
+        '3xl': 30,
+        '4xl': 36,
+        '5xl': 48,
+        '6xl': 60,
+        '7xl': 72,
+        '8xl': 96,
+        '9xl': 128,
       },
       boxShadow: {
         'hard-1': '-2px 2px 8px 0px rgba(38, 38, 38, 0.20)',
@@ -201,6 +228,10 @@ module.exports = {
         'soft-3': '0px 0px 30px rgba(38, 38, 38, 0.1)',
         'soft-4': '0px 0px 40px rgba(38, 38, 38, 0.1)',
       },
+      space: {
+        '14': 56,
+        '33': 148,
+      }
     },
   },
   plugins: [gluestackPlugin],
