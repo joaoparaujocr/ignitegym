@@ -4,6 +4,7 @@ import { GluestackUIProvider } from '@components/ui/gluestack-ui-provider';
 import { Text } from '@/gluestack-ui/text';
 import { Center } from '@/gluestack-ui/center';
 import './global.css'
+import { Loading } from '@components/Loading';
 
 export default function App() {
   const [fontsLoad] = useFonts({ Roboto_400Regular, Roboto_700Bold })
@@ -15,7 +16,7 @@ export default function App() {
         <Center className='flex-1 bg-gray-700'>
           <Text className='text-secondary-300'>Open up App.tsx to start working on your app!</Text>
         </Center>
-      ) : <View />}
+      ) : <Loading />}
     </GluestackUIProvider >
   );
 }
